@@ -3,7 +3,7 @@ import urllib.request
 from datetime import datetime
 import openai
 
-openai.api_key=os.getenv("OPENAI_API_KEY")
+openai.api_key=os.getenv("OPENAI_API_KEY") #Your system-environment variable name which has the api-key
 user_prompt=input("Write your prompt ")
 response=openai.Image.create(
     prompt=user_prompt,
